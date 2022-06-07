@@ -6,7 +6,7 @@ This is a small project made for Umbraco's [CodegardenChallenge 2022](https://um
 
 1. Download the latest [CG.Screensaver.zip from releases.](https://github.com/lars-erik/cg-screensaver/releases)
 2. Unzip to folder of choice
-3. Right click "CG Screensaver.scr" and choose select.
+3. Right click "CG Screensaver.scr" and choose install.
 
 ### Requirements
 
