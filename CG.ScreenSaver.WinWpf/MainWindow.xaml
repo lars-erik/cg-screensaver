@@ -4,9 +4,15 @@
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:CG.ScreenSaver.WinWpf"
-        xmlns:Wpf="clr-namespace:Microsoft.Web.WebView2.Wpf;assembly=Microsoft.Web.WebView2.Wpf" x:Class="CG.ScreenSaver.WinWpf.MainWindow"
+        xmlns:Wpf="clr-namespace:Microsoft.Web.WebView2.Wpf;assembly=Microsoft.Web.WebView2.Wpf"
+        x:Class="CG.ScreenSaver.WinWpf.MainWindow"
         mc:Ignorable="d"
-        Title="MainWindow" Height="450" Width="800" Loaded="Window_Loaded">
+        Title="MainWindow"
+        Height="450"
+        Width="800"
+        WindowStartupLocation="Manual"
+        Loaded="Window_Loaded"
+        Closing="Window_Closing" KeyDown="Window_KeyDown">
     <Grid>
 
         <Wpf:WebView2 Name="Browser"/>

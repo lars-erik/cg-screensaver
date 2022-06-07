@@ -1,0 +1,12 @@
+{
+  "profiles": {
+    "Config": {
+      "commandName": "Project",
+      "commandLineArgs": "/c"
+    },
+    "Show": {
+      "commandName": "Project",
+      "commandLineArgs": "/s"
+    }
+  }
+}

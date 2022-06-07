@@ -24,9 +24,6 @@ namespace CG.ScreenSaver.WinWpf
         public MainWindow()
         {
             InitializeComponent();
-
-            WindowState = WindowState.Maximized;
-            WindowStyle = WindowStyle.None;
         }
 
         private async void Window_Loaded(object sender, RoutedEventArgs e)
@@ -34,6 +31,21 @@ namespace CG.ScreenSaver.WinWpf
             var stream = GetType().Assembly.GetManifestResourceStream("CG.ScreenSaver.WinWpf.embedcontainer.html");
             await Browser.EnsureCoreWebView2Async();
             Browser.NavigateToString(await new StreamReader(stream!).ReadToEndAsync());
+        }
+
+        private void Window_Closing(object sender, System.ComponentModel.CancelEventArgs e)
+        {
+            Application.Current.Shutdown();
+        }
+
+        private void Mouse_Shutdown(object sender, MouseEventArgs e)
+        {
+            Application.Current.Shutdown();
+        }
+
+        private void Window_KeyDown(object sender, KeyEventArgs e)
+        {
+            Application.Current.Shutdown();
         }
     }
 }
